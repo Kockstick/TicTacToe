@@ -26,6 +26,6 @@ public class MainActivity extends AppCompatActivity {
             View view = getLayoutInflater().inflate(R.layout.game_button, null);
             GameButton gameButton = new GameButton(view);
             buttonsLayout.addView(view);
-        }
+        } //
     }
 }
