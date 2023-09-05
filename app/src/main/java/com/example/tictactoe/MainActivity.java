@@ -5,18 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.tictactoe.databinding.ActivityMainBinding;
 import com.google.android.flexbox.FlexboxLayout;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FlexboxLayout buttonsLayout;
+    ActivityMainBinding binding;
+
+    private ArrayList<GameButton> buttons = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonsLayout = findViewById(R.id.buttonsLayout);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
 
         AddButtons();
     }
@@ -25,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 9; i++){
             View view = getLayoutInflater().inflate(R.layout.game_button, null);
             GameButton gameButton = new GameButton(view);
-            buttonsLayout.addView(view);
-        } //
+            binding.buttonsLayout.addView(view);
+            buttons.add(gameButton);
+        }
     }
 }
