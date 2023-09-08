@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/five">
+    android:background="@color/background">
 
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/buttonsLayout"
@@ -21,5 +21,17 @@
 
 
     </com.google.android.flexbox.FlexboxLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="Clear"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/buttonColor"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:roundedCorners="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

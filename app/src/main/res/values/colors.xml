@@ -5,6 +5,9 @@
 
     <color name="transparent">#00000000</color>
 
+    <color name="background">#edede9</color>
+    <color name="buttonColor">#d5bdaf</color>
+
     <color name="first">#8AC8B1</color>
     <color name="second">#F5E9AF</color>
     <color name="third">#988F58</color>
