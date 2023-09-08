@@ -6,6 +6,7 @@ public class GameManager {
 
     private static ArrayList<Player> players = new ArrayList<Player>();
     public static Player player;
+    public static boolean isGame = true;
 
     public static void Start(){
         players.add(new Player(0, "Kockstik", "X"));

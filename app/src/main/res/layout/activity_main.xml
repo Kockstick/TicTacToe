@@ -8,6 +8,16 @@
     tools:context=".MainActivity"
     android:background="@color/background">
 
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="360dp"
+        android:background="@drawable/sharp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/buttonsLayout"
         android:layout_width="wrap_content"
@@ -22,16 +32,18 @@
 
     </com.google.android.flexbox.FlexboxLayout>
 
-    <com.beardedhen.androidbootstrap.BootstrapButton
-        android:layout_width="160dp"
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="150dp"
         android:layout_height="60dp"
-        android:text="Clear"
-        android:layout_margin="15dp"
         android:backgroundTint="@color/buttonColor"
         android:elevation="5dp"
+        android:text="restart"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        android:layout_margin="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:roundedCorners="true" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
